@@ -8,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 
 export class CartComponent implements OnInit {
 
+  items; 
+  
   constructor() { }
 
   ngOnInit() {
