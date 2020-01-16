@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { CartService } from '../cart.service';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
@@ -10,7 +10,7 @@ export class CartService {
   items = [];
 
   constructor(
-    private cartService: CartService
+    private http: HttpClient
   ) { }
 
   addToCart(product) {
